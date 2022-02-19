@@ -24,7 +24,7 @@ server.listen(port, ()=>{
 const express = require("express");
 const functions = require("./functions");
 const app = express();
-const port = 3000;
+const port = proces.env.PORT || 3000;   // heroku || local
 const path = require("path");
 const zz = 11;
 
